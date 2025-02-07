@@ -1,0 +1,37 @@
+/* Neon text effect for headings */
+.neon-text {
+    text-shadow: 2px 2px 10px #ff6600;
+  }
+  
+  /* Style for the event cards */
+  .event-card {
+    background-color: #00b2a6;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  /* Neon glow effect on hover */
+  .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00b2a6;
+  }
+  
+  /* Ensure event images are uniform */
+  .event-img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+  }
+    
