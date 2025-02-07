@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Modal} from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 import "./Event.css";
 
@@ -76,7 +76,9 @@ const Events = () => {
 
   return (
     <div className="container-fluid py-5 bg-dark text-white min-vh-100">
-      <h2 className="text-center mb-4 display-4 neon-text">Events</h2>
+      <h2 className="text-center mb-4 display-4 neon-text default-cursor">
+        Events
+      </h2>
 
       {/* Filter Buttons */}
       <div className="d-flex justify-content-center mb-4">
@@ -115,7 +117,7 @@ const Events = () => {
       {Object.entries(eventsData).map(([category, events]) =>
         filter === "All" || filter === category ? (
           <div key={category}>
-            <h3 className="my-4 neon-text">{category} Events</h3>
+            <h3 className="my-4 neon-text default-cursor">{category} Events</h3>
             <div className="row">
               {events.map((event) => (
                 <div key={event.name} className="col-12 col-sm-6 col-md-4 mb-4">
@@ -146,10 +148,10 @@ const Events = () => {
           onHide={() => setSelectedEvent(null)}
           centered
         >
-          <Modal.Header closeButton className="bg-info text-white">
+          <Modal.Header closeButton className="text-white card-color">
             <Modal.Title>{selectedEvent?.name}</Modal.Title>
           </Modal.Header>
-          <Modal.Footer className="bg-info text-white d-flex justify-content-center">
+          <Modal.Footer className="text-white card-color d-flex justify-content-center">
             <p>{selectedEvent?.description}</p>
           </Modal.Footer>
         </Modal>
