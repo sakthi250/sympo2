@@ -22,7 +22,7 @@ const Home = () => {
       
           <p className="glowing-text ">
             Join us for a spectacular journey into technology,creativity,and
-            innovation,all wrapped in the charm of Retro Cinema
+            innovation,all wrapped in the charm of Retro Cinema.
           </p>
         </div>
         <img src="pop.jpg" className="img-in" />
