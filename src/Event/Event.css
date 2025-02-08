@@ -16,7 +16,7 @@
   /* Neon glow effect on hover */
   .event-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #00b2a6;
+    box-shadow: 0 0 45px #00b2a6;
   }
   
   /* Ensure event images are uniform */

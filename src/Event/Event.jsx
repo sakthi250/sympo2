@@ -76,11 +76,11 @@ const Events = () => {
 
   return (
     <div className="container-fluid py-5 bg-dark text-white min-vh-100">
-      <h2 className="text-center mb-4 display-4 neon-text default-cursor">
+      <h2 className="text-center mb-4 display-4 neon-text default-cursor mt-4">
         Events
       </h2>
 
-      {/* Filter Buttons */}
+     
       <div className="d-flex justify-content-center mb-4">
         <div className="btn-group" role="group" aria-label="Filter Buttons">
           <button
@@ -113,7 +113,7 @@ const Events = () => {
         </div>
       </div>
 
-      {/* Display Events Based on Filter */}
+      
       {Object.entries(eventsData).map(([category, events]) =>
         filter === "All" || filter === category ? (
           <div key={category}>
@@ -141,7 +141,6 @@ const Events = () => {
         ) : null
       )}
 
-      {/* Modal for Selected Event */}
       {selectedEvent && (
         <Modal
           show={!!selectedEvent}

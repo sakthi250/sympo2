@@ -1,25 +1,43 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
 
 const Header = () => {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="nav-header">
       <div className="nav-content">
-        <img className="website-logo" src="logo.png" alt="website logo" />
+        <img className="website-logo" src="fin.png" alt="website logo" onClick={() => navigate("/")} />
 
-        <ul className="nav-menu">
+        {/* Hamburger Menu */}
+        <div className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </div>
+
+        {/* Navigation Links */}
+        <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
           <li className="nav-link" onClick={() => navigate("/")}>
             Home
           </li>
           <li className="nav-link" onClick={() => navigate("/events")}>
             Events
           </li>
-          <li className="nav-link">Contact Us</li>
-          <li className="nav-link">About Us</li>
+          <li className="nav-link" onClick={() => navigate("/contact")}>
+            Contact Us
+          </li>
+          <li className="nav-link" onClick={() => navigate("/about")}>
+            About Us
+          </li>
         </ul>
       </div>
     </nav>
   );
 };
+
 export default Header;

@@ -12,6 +12,7 @@ const Home = () => {
             <p className="glowing-text ">
               Where Innovation Meets sliver Screen
             </p>
+            <p className="glowing-text">26 February 2025</p>
           </div>
           <div className="img-con">
             <img src="cam.png" className="img-in" />
