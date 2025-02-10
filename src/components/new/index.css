@@ -1,0 +1,131 @@
+.new-img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border: none; /* No hard edges */
+    
+    /* Soft shadow for glowing effect */
+    box-shadow: 0px 0px 40px rgba(255, 165, 0, 0.8);
+    
+    /* Blur effect + shadow for blending */
+    filter: blur(2px) drop-shadow(0px 0px 20px rgba(255, 165, 0, 0.7));
+    
+    /* Radial gradient mask to blend edges */
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
+    
+    /* Smooth transition for hover effects */
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.new-img:hover {
+    filter: blur(1px) drop-shadow(0px 0px 30px rgba(255, 165, 0, 1));
+}
+
+.new-con{
+    background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.new-glowing-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00fff0; /* Bright cyan */
+    text-align: center;
+    text-shadow: 0 0 5px #00b2a6,  
+                 0 0 10px #00fff0, 
+                 0 0 20px #00fff0, 
+                 0 0 40px #00fff0, 
+                 0 0 80px #00fff0, 
+                 0 0 100px #00fff0;
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* Flickering effect for realism */
+@keyframes flicker {
+    0% { text-shadow: 0 0 5px #00b2a6, 0 0 10px #00fff0, 0 0 20px #00fff0, 0 0 40px #00fff0, 0 0 80px #00fff0, 0 0 100px #00fff0; }
+    50% { text-shadow: 0 0 5px #00b2a6, 0 0 15px #00fff0, 0 0 25px #00fff0, 0 0 50px #00fff0, 0 0 90px #00fff0, 0 0 120px #00fff0; }
+    100% { text-shadow: 0 0 5px #00b2a6, 0 0 10px #00fff0, 0 0 20px #00fff0, 0 0 40px #00fff0, 0 0 80px #00fff0, 0 0 100px #00fff0; }
+}
+
+.new-home-con{
+    
+    background: linear-gradient(135deg, #0d0d0d 20%, #1a1a1a 50%, #00332a 80%);
+    background-attachment: fixed;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-img-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin: 20px;
+    
+}
+.new-img-in{
+width: 15%;
+}
+
+@media (max-width: 768px) {
+    .new-img {
+        width: 60%; 
+        margin-top: 10%;
+    }
+
+    .new-con {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .new-glowing-text {
+        font-size: 1.5rem; 
+    }
+
+    .new-quote {
+        width: 80%; 
+        padding: 15px;
+    }
+
+    .new-img-con {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .new-img-in {
+        width: 50%; 
+        margin-bottom: 15px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .new-img {
+        width: 80%;
+    }
+
+    .new-glowing-text {
+        font-size: 1.2rem; 
+    }
+
+    .new-quote {
+        width: 90%; 
+    }
+
+    .new-img-in {
+        width: 70%; 
+    }
+}

@@ -1,41 +1,96 @@
-/* Neon text effect for headings */
+/* Neon Text Effect */
 .neon-text {
-    text-shadow: 2px 2px 10px #ff6600;
-  }
-  
-  /* Style for the event cards */
-  .event-card {
+    text-shadow: 2px 2px 10px #ff6600, 0 0 20px #ff4500;
+    font-weight: bold;
+}
+
+/* Style for Event Cards */
+.event-card {
     background-color: #00b2a6;
     border: none;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s;
     cursor: pointer;
-  }
-  .card-color{
-    background-color: #00b2a6;
-  }
-  /* Neon glow effect on hover */
-  .event-card:hover {
+    opacity: 0.9;
+}
+
+/* Neon Glow Effect on Hover */
+.event-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 45px #00b2a6;
-  }
-  
-  /* Ensure event images are uniform */
-  .event-img {
+    box-shadow: 0 0 20px #00fff2, 0 0 40px #00b2a6, 0 0 60px #009688;
+    opacity: 1;
+}
+
+/* Event Image Styling */
+.event-img {
     height: 200px;
     object-fit: cover;
-  }
-  .modal-overlay {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Modal Overlay (Blur Effect) */
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1050;
-  }
-    .default-cursor{
-        cursor: default;
+}
+
+/* Default Cursor */
+.default-cursor {
+    cursor: default;
+}
+
+/* 📌 Responsive Design */
+
+/* Small Devices (Phones) */
+@media screen and (max-width: 600px) {
+    .event-card {
+        width: 90%;
+        margin: auto;
     }
+    .event-img {
+        height: 150px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .event-card {
+        width: 80%;
+        margin: auto;
+    }
+    .event-img {
+        height: 180px;
+    }
+}
+
+/* Large Devices (Laptops, Desktops) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .event-card {
+        width: 100%;  /* Increased width */
+        margin: auto;
+    }
+    .event-img {
+        height: 220px;
+        width: 450px;
+    }
+}
+
+/* Extra Large Devices (4K Screens, Ultra-Wide Monitors) */
+@media screen and (min-width: 1441px) {
+    .event-card {
+        width: 80%;
+        margin: auto;
+    }
+    .event-img {
+        height: 220px;
+    }
+}

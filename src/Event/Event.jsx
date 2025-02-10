@@ -8,12 +8,12 @@ const eventsData = {
     {
       name: "CodeQuest",
       src: "coding.jpg",
-      description: "A coding marathon for the best minds.",
+      description: "This coding contest is designed to test participants' programming knowledge, problem-solving abilities, and debugging skills through a series of challenging rounds. Teams of two contestants will compete, progressing through three rounds of increasing difficulty.",
     },
     {
-      name: "QuizTime Classics",
+      name: "Tech Tackle",
       src: "quiz.jpg",
-      description: "A trivia challenge with a cinematic twist.",
+      description: "Name the legends, Guess the greats, solve tricky puzzles, and ace the tech quiz! Show off your reasoning and technical brilliance!  Three rounds. One champion. Will you rise to the top?”",
     },
     {
       name: "Paper Reel",
@@ -28,7 +28,7 @@ const eventsData = {
     {
       name: "Cut and Frame",
       src: "video.jpg",
-      description: "A video editing contest for film enthusiasts.",
+      description: "In Cut And Frame (Video Editing) there are mainly two rounds in this event.  1st Round Each individual will be assigned a specific theme. The video should have a duration of 2-3 minutes and must be exported . The allotted time for video editing is 30 minutes.  2nd Round  A common theme will be provided to all participants selected from the first round. The video should be 4-5 minutes in duration and must be exported . The allocated time for editing the video is 20 minutes",
     },
     {
       name: "Screen Test",
@@ -80,7 +80,6 @@ const Events = () => {
         Events
       </h2>
 
-     
       <div className="d-flex justify-content-center mb-4">
         <div className="btn-group" role="group" aria-label="Filter Buttons">
           <button
@@ -113,7 +112,6 @@ const Events = () => {
         </div>
       </div>
 
-      
       {Object.entries(eventsData).map(([category, events]) =>
         filter === "All" || filter === category ? (
           <div key={category}>
