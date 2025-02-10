@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="nav-header">
+    <nav className="nav-header sticky-top">
       <div className="nav-content">
         <img className="website-logo" src="fin.png" alt="website logo" onClick={() => navigate("/")} />
 
