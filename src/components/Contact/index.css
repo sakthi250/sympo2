@@ -65,4 +65,14 @@
     .default-cursor{
         cursor: default;
     }
- 
+ .con{
+  height: auto;
+ }
+
+ @media screen and (max-width: 600px) {
+  .contact-card {
+      width: 100%; /* Full width */
+  }
+}
+
+/* Medium Devices (Tablets) */

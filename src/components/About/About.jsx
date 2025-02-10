@@ -4,7 +4,7 @@ const About = () => {
   const teamData = {
     "Web Developer": [
       {
-        name: "Mohammed Riyax",
+        name: "Mohammed Riyaz",
         role: "Web Developer",
         image: "https://via.placeholder.com/150/ff7f50/fff?text=John",
       },
@@ -19,7 +19,17 @@ const About = () => {
         image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
       },
       {
-        name: "Mukuthan",
+        name: "Mukundan",
+        role: "Web Developer",
+        image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
+      },
+      {
+        name: "Mohamed Shajid",
+        role: "Web Developer",
+        image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
+      },
+      {
+        name: "Mohammed Sulthan",
         role: "Web Developer",
         image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
       },
