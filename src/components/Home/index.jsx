@@ -5,7 +5,7 @@ const Home = () => {
       <div className="con">
         <div className="home-con">
           <div className="img">
-            <img src="fin.png" className="img" />
+            <img src="logo.svg" className="img" />
             <p className="glowing-text">Department of Computer Science</p>
           </div>
           <div>

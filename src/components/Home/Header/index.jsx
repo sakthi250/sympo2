@@ -13,7 +13,9 @@ const Header = () => {
   return (
     <nav className="nav-header sticky-top">
       <div className="nav-content">
-        <img className="website-logo" src="fin.png" alt="website logo" onClick={() => navigate("/")} />
+        <img className="website-logo" src="logo.svg" alt="website logo" onClick={() =>{navigate("/")
+         }
+        } />
 
         {/* Hamburger Menu */}
         <div className="menu-toggle me-3" onClick={toggleMenu}>
@@ -22,16 +24,16 @@ const Header = () => {
 
         {/* Navigation Links */}
         <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
-          <li className="nav-link" onClick={() => navigate("/")}>
+          <li className="nav-link" onClick={() =>{ toggleMenu(); navigate("/")}}>
             Home
           </li>
-          <li className="nav-link" onClick={() => navigate("/events")}>
+          <li className="nav-link" onClick={() => { toggleMenu();navigate("/events")}}>
             Events
           </li>
-          <li className="nav-link" onClick={() => navigate("/contact")}>
+          <li className="nav-link" onClick={() => { toggleMenu();navigate("/contact")}}>
             Contact Us
           </li>
-          <li className="nav-link" onClick={() => navigate("/about")}>
+          <li className="nav-link" onClick={() => { toggleMenu();navigate("/about")}}>
             About Us
           </li>
         </ul>

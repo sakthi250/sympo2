@@ -6,7 +6,7 @@ const New = () => {
     <>
       <div className="new-con">
         <div className="new-home-con text-center ">
-          <img src="fin.png" className="new-img" />
+          <img src="logo-in-svg.svg" className="new-img" />
           <h1 className="neon-text m-2">Department of Computer Science</h1>
           <div>
             <h3 className="new-glowing-text m-2">
