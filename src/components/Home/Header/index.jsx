@@ -16,8 +16,8 @@ const Header = () => {
         <img className="website-logo" src="fin.png" alt="website logo" onClick={() => navigate("/")} />
 
         {/* Hamburger Menu */}
-        <div className="menu-toggle" onClick={toggleMenu}>
-          ☰
+        <div className="menu-toggle me-3" onClick={toggleMenu}>
+          {(isOpen)?"X":"☰"}
         </div>
 
         {/* Navigation Links */}
