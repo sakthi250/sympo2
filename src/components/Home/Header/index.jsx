@@ -20,6 +20,7 @@ const Header = () => {
         {/* Hamburger Menu */}
         <div className="menu-toggle me-3" onClick={toggleMenu}>
           {(isOpen)?"X":"☰"}
+          
         </div>
 
         {/* Navigation Links */}

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Cam from "./Cam";
 import Pop from "./Pop";
 import "./index.css";
+import Cse from "./Cse";
 
 const New = () => {
   const calculateTimeLeft = () => {
@@ -52,8 +53,7 @@ const New = () => {
     <div className="new-home-con">
       <div className="new-home-con text-center">
         <img src="logo.svg" className="new-img" alt="Department Logo" />
-        <h1 className="neon-text m-2">Department of Computer Science</h1>
-
+        <Cse/>
         <h3 className="new-glowing-text m-2">
           Where Innovation Meets Silver Screen <br />
         </h3>
