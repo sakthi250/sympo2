@@ -28,6 +28,22 @@ const ContactUs = () => {
           <h3 className="my-4 neon-text default-cursor">Kishore</h3>
           <p className="contact-info">Phone: 9876543210</p>
         </div>
+        <div className="contact-card">
+          <h3 className="my-4 neon-text default-cursor">Kishore</h3>
+          <p className="contact-info">Phone: 9876543210</p>
+        </div>
+        <div className="contact-card">
+          <h3 className="my-4 neon-text default-cursor">Kishore</h3>
+          <p className="contact-info">Phone: 9876543210</p>
+        </div>
+        <div className="contact-card">
+          <h3 className="my-4 neon-text default-cursor">Kishore</h3>
+          <p className="contact-info">Phone: 9876543210</p>
+        </div>
+        <div className="contact-card">
+          <h3 className="my-4 neon-text default-cursor">Kishore</h3>
+          <p className="contact-info">Phone: 9876543210</p>
+        </div>
       </div>
 
       <div className="contact-footer w-100">

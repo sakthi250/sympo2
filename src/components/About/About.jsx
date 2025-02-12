@@ -51,6 +51,11 @@ const About = () => {
         image: "https://via.placeholder.com/150/4169e1/fff?text=David",
       },
       {
+        name: "mohamed apsar",
+        role: "Graphic Design",
+        image: "https://via.placeholder.com/150/4169e1/fff?text=David",
+      },
+      {
         name: "Abhishek",
         role: "Graphic Design",
         image: "https://via.placeholder.com/150/4169e1/fff?text=David",
