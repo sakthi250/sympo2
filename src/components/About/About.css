@@ -1,66 +1,70 @@
 .our-team-container {
-    height: auto;
-  }
+  height: auto;
+}
+
+
+.neon-text {
+  text-shadow: 2px 2px 10px #ff6600;
+}
+
+.team-section {
+  margin-bottom: 40px;
+}
+
+.team-section-title {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color: #00b2a6;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 165, 0, 1);
+}
+
+.team-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #f39c12;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+  margin-top: 20px;
+}
+
+.team-name {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9); */
+}
+
+.team-role {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 5px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.8);
   
-  /* Main title styling with neon gold and glowing effect */
-  .neon-text {
-    text-shadow: 2px 2px 10px #ff6600;
-  }
-  
-  /* Team section titles */
-  .team-section {
-    margin-bottom: 40px;
-  }
-  
-  .team-section-title {
-    color: #ffcc00;
-    margin-bottom: 20px;
-  }
-  
-  /* Team card styles using the neon hex color for background */
-  .team-card {
-    background-color: #00b2a6;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
-    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  
-  .team-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(255, 165, 0, 1);
-  }
-  
-  /* Team image styling */
-  .team-img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 5px solid #f39c12;
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
-    margin-top: 20px;
-  }
-  
-  /* Team member name and role styling */
-  .team-name {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
-  }
-  
-  .team-role {
-    font-size: 16px;
-    font-style: italic;
-    margin-top: 5px;
-  }
-  
-  /* Fade-in animation */
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+

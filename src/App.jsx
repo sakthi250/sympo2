@@ -1,6 +1,5 @@
 import "./App.css";
 import Header from "./components/Home/Header";
-import Home from "./components/Home";
 import Events from "./Event/Event";
 import Contact from "./components/Contact";
 import About from "./components/About/About";

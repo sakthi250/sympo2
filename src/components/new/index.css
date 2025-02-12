@@ -2,8 +2,11 @@
     width: 30%;
     height: auto;
     object-fit: cover;
-    border: none; /* No hard edges */
+    border: none;
+    /* filter:drop-shadow(0 0 8px #00e1ff);  */
+
 }
+
 .new-con{
     background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
     background-blend-mode: overlay;
@@ -60,7 +63,188 @@
 .new-img-in{
 width: 15%;
 }
+.countdownSection {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.countdownTitle {
+  font-size: 24px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.countdownTimer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.timeBox {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 80px;  
+  height: 80px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.timeBox div {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ffcc00;
+}
+
+.busSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #00b2a6;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+  margin-top: 40px;
+}
+
+.busImageContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.busImage {
+  width: 200px;
+  height: auto;
+}
+
+.busButton {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6600;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.busButton:hover {
+  background-color: #ff4500;
+}
+
+.busText {
+  flex: 1;
+  color: white;
+  text-align: left;
+}
+
+.busText h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.busText p {
+  font-size: 16px;
+}
+.eventSchedule {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.scheduleTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 2px 2px 8px rgba(255, 165, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.eventCard {
+  background: #00b2a6;
+  color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.eventCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 165, 0, 0.8);
+}
+
+.eventName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.eventTime, .eventLocation {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .busSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .busImageContainer {
+    margin-bottom: 15px;
+  }
+
+  .busText {
+    text-align: center;
+  }
+}
+.mapSection {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mapTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.8);
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+}
 @media (max-width: 768px) {
     .new-img {
         width: 60%; 
@@ -90,6 +274,23 @@ width: 15%;
         width: 50%; 
         margin-bottom: 15px; 
     }
+    .countdownTimer {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    
+      /* .timeBox {
+        font-size: 18px;
+        min-width: 70px;
+        padding: 12px;
+      } */
+    
+      .countdownTitle {
+        font-size: 22px;
+      }
+      .mapContainer iframe {
+        height: 300px;
+      }
 }
 
 
@@ -109,4 +310,18 @@ width: 15%;
     .new-img-in {
         width: 70%; 
     }
+    .countdownTimer {
+        flex-direction: row;
+        align-items: center;
+      }
+    
+      /* .timeBox {
+        font-size: 16px;
+        min-width: 60px;
+        padding: 10px;
+      } */
+    
+      .countdownTitle {
+        font-size: 20px;
+      }
 }

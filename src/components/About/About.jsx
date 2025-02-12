@@ -2,12 +2,12 @@ import "./About.css"; // External CSS file
 
 const About = () => {
   const teamData = {
-    "Web Developer": [
-      {
-        name: "Mohammed Riyaz",
-        role: "Web Developer",
-        image: "https://via.placeholder.com/150/ff7f50/fff?text=John",
-      },
+    "Web Development Team": [
+      // {
+      //   name: "Mohammed Riyaz",
+      //   role: "Web Developer",
+      //   image: "https://via.placeholder.com/150/ff7f50/fff?text=John",
+      // },
       {
         name: "Dhana Sakthivel",
         role: "Web Developer",
@@ -39,7 +39,7 @@ const About = () => {
         image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
       },
     ],
-    "Graphic Design": [
+    "Graphic Design Team": [
       {
         name: "Infanta",
         role: "Graphic Design",
@@ -55,7 +55,8 @@ const About = () => {
         role: "Graphic Design",
         image: "https://via.placeholder.com/150/4169e1/fff?text=David",
       },
-    ],"Office Bearers": [
+    ],
+    "Office Bearers": [
       {
         name: "M.Naveen",
         role: "President",
@@ -86,7 +87,7 @@ const About = () => {
   return (
     <div className="container-fluid our-team-container py-5 bg-dark text-white min-vh-100 con">
       <h2 className="text-center mb-4 display-4 neon-text default-cursor mt-4">
-        Meet Our Team
+        Meet Our Technical Team
       </h2>
       <div className="container">
         {Object.entries(teamData).map(([teamName, members]) => (
