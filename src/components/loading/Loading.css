@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+.retro-loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+.retro-loading-overlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://motionarray.imgix.net/preview-205331-Y15iLYG4Pp-high_0010.jpg?w=660&q=60&fit=max&auto=format');
+  opacity: 0.15;
+  animation: circuit-glow 5s infinite alternate;
+}
+.retro-loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.retro-text {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 40px cyan;
+  margin-bottom: 40px;
+  animation: glitch 1.2s infinite alternate;
+}
+
+.loader {
+  width: 80%;
+  max-width: 500px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 3px solid #0ff;
+  box-shadow: 0 0 15px #0ff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Animated Glowing Loader Bar */
+.loader-bar {
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #0ff, transparent);
+  box-shadow: 0 0 20px cyan;
+  animation: loading 4s infinite ease-in-out;
+}
+@keyframes circuit-glow {
+  0% { opacity: 0.1; }
+  100% { opacity: 0.2; }
+}
+
+@keyframes glitch {
+  0%   { transform: skewX(0deg); opacity: 1; }
+  20%  { transform: skewX(5deg); opacity: 0.9; }
+  40%  { transform: skewX(-5deg); opacity: 1; }
+  60%  { transform: skewX(3deg); opacity: 0.95; }
+  80%  { transform: skewX(-3deg); opacity: 1; }
+  100% { transform: skewX(0deg); opacity: 1; }
+}
+
+/* Smooth Loader Animation */
+@keyframes loading {
+  0%   { width: 0%; }
+  50%  { width: 100%; }
+  100% { width: 0%; }
+}
+
+@media (max-width: 600px) {
+  .retro-text {
+    font-size: 1.8rem;
+  }
+  .loader {
+    width: 90%;
+  }
+}

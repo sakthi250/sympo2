@@ -37,6 +37,10 @@ const Header = () => {
           <li className="nav-link" onClick={() => { toggleMenu();navigate("/about")}}>
             About Us
           </li>
+          <li className="nav-link" >
+           
+            <a href="https://forms.gle/N9L5Y6vx3wbASVQC6"   className="nav-link">Register</a>
+          </li>
         </ul>
       </div>
     </nav>

@@ -4,7 +4,7 @@
     font-weight: bold;
 }
 
-/* Style for Event Cards */
+
 .event-card {
     background-color: #00b2a6;
     border: none;
@@ -96,4 +96,13 @@
 }
 .card-color{
     background-color: #00b2a6;
+}
+.an{
+    color: black;
+    text-decoration: none;
+}
+.reg-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00fff2, 0 0 40px #00b2a6, 0 0 60px #009688;
+    opacity: 1;
 }
