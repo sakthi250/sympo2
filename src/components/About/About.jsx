@@ -90,7 +90,7 @@ const About = () => {
     ],
   };
   return (
-    <div className="container-fluid our-team-container py-5 bg-dark text-white min-vh-100 con">
+    <div className="our-team-container container-fluid bg-dark text-white new-con">
       <h2 className="text-center mb-4 display-4 neon-text default-cursor mt-4">
         Meet Our Technical Team
       </h2>
