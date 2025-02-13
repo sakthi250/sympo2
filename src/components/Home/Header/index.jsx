@@ -13,33 +13,65 @@ const Header = () => {
   return (
     <nav className="nav-header sticky-top">
       <div className="nav-content">
-        <img className="website-logo" src="logo.svg" alt="website logo" onClick={() =>{navigate("/")
-         }
-        } />
+        <img
+          className="website-logo"
+          src="logo.svg"
+          alt="website logo"
+          onClick={() => {
+            navigate("/");
+          }}
+        />
 
         {/* Hamburger Menu */}
         <div className="menu-toggle me-3" onClick={toggleMenu}>
-          {(isOpen)?"X":"☰"}
-          
+          {isOpen ? "X" : "☰"}
         </div>
 
         {/* Navigation Links */}
         <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
-          <li className="nav-link" onClick={() =>{ toggleMenu(); navigate("/")}}>
+          <li
+            className="nav-link"
+            onClick={() => {
+              toggleMenu();
+              navigate("/");
+            }}
+          >
             Home
           </li>
-          <li className="nav-link" onClick={() => { toggleMenu();navigate("/events")}}>
+          <li
+            className="nav-link"
+            onClick={() => {
+              toggleMenu();
+              navigate("/events");
+            }}
+          >
             Events
           </li>
-          <li className="nav-link" onClick={() => { toggleMenu();navigate("/contact")}}>
+          <li
+            className="nav-link"
+            onClick={() => {
+              toggleMenu();
+              navigate("/contact");
+            }}
+          >
             Contact Us
           </li>
-          <li className="nav-link" onClick={() => { toggleMenu();navigate("/about")}}>
+          <li
+            className="nav-link"
+            onClick={() => {
+              toggleMenu();
+              navigate("/about");
+            }}
+          >
             About Us
           </li>
-          <li className="nav-link" >
-           
-            <a href="https://forms.gle/N9L5Y6vx3wbASVQC6"   className="nav-link m-0 p-0">Register Now</a>
+          <li className="nav-link">
+            <a
+              href="https://forms.gle/N9L5Y6vx3wbASVQC6"
+              className="nav-link m-0 p-0"
+            >
+              Register Now
+            </a>
           </li>
         </ul>
       </div>

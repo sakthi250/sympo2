@@ -3,6 +3,7 @@ import Cam from "./Cam";
 import Pop from "./Pop";
 import "./index.css";
 import Cse from "./Cse";
+import Ticket from "./Ticket";
 
 const New = () => {
   const calculateTimeLeft = () => {
@@ -85,9 +86,11 @@ const New = () => {
           </h3>
           <Pop />
         </div>
-        <div className="eventSchedule">
+        <div className="eventSchedule row d-flex justify-content-st">
+         
           <h2 className="scheduleTitle">Event Schedule</h2>
-          <div className="eventsGrid">
+        <Ticket/>
+          <div className="eventsGrid col-4">
             {events.map((event, index) => (
               <div key={index} className="eventCard">
                 <h3 className="eventName">{event.name}</h3>
@@ -96,6 +99,7 @@ const New = () => {
               </div>
             ))}
           </div>
+          <Ticket/>
         </div>
         <div className="mapSection">
           <h2 className="mapTitle">Find Us Here</h2>
@@ -114,8 +118,8 @@ const New = () => {
 
         <div className="busSection">
           <div className="busImageContainer">
-            <img src="/bus.avif" alt="Bus Route" className="busImage" />
-            <button>View Routes</button>
+            <img src="/bus.avif" alt="Bus Route" className="busImage m-1" />
+            <button className="btn btn-warning text-light">View Routes</button>
           </div>
 
           <div className="busText">
