@@ -39,7 +39,7 @@ const Header = () => {
           </li>
           <li className="nav-link" >
            
-            <a href="https://forms.gle/N9L5Y6vx3wbASVQC6"   className="nav-link">Register</a>
+            <a href="https://forms.gle/N9L5Y6vx3wbASVQC6"   className="nav-link m-0 p-0">Register Now</a>
           </li>
         </ul>
       </div>
