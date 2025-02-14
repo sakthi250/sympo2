@@ -37,13 +37,13 @@ const New = () => {
     {
       name: "Technical Events",
       time: "10:00 AM - 12:00 PM",
-      location: "Classroom A",
+      location: "CSE Dept",
     },
     { name: "Lunch", time: "12:00 PM - 1:00 PM", location: "Canteen" },
     {
       name: "Non-Technical Events",
       time: "1:00 PM - 3:00 PM",
-      location: "Classroom C",
+      location: "CSE Dept",
     },
     {
       name: "Prize Distribution",
@@ -88,6 +88,10 @@ const New = () => {
             innovation, all wrapped in the charm of Retro Cinema.
           </h3>
           <Pop />
+        </div>
+        <div className="">
+          <h2 className="oursponsor">Our Sponsor</h2>
+          <img src="sponsor.jpg" className="sponsor-img"></img>
         </div>
         <div className="eventSchedule row d-flex justify-content-st">
          

@@ -11,81 +11,81 @@ const About = () => {
       {
         name: "Dhana Sakthivel",
         role: "Web Developer",
-        image: "https://via.placeholder.com/150/ff7f50/fff?text=John",
+        image:"dp.png",
       },
       {
         name: "Asfak Ahamed",
         role: "Web Developer",
-        image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
+        image: "dp.png",
       },
       {
         name: "Mukundan",
         role: "Web Developer",
-        image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
+        image: "dp.png",
       },
       {
         name: "Mohamed Shajid",
         role: "Web Developer",
-        image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
+        image: "dp.png",
       },
       {
         name: "Mohammed Sulthan",
         role: "Web Developer",
-        image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
+        image: "dp.png",
       },
       {
         name: "Joshva Patrick",
         role: "Web Developer",
-        image: "https://via.placeholder.com/150/ff6347/fff?text=Alice",
+        image: "dp.png",
       },
     ],
     "Graphic Design Team": [
       {
         name: "Infanta",
         role: "Graphic Design",
-        image: "https://via.placeholder.com/150/1e90ff/fff?text=Jane",
+        image: "dp.png",
       },
       {
         name: "Monica",
         role: "Graphic Design",
-        image: "https://via.placeholder.com/150/4169e1/fff?text=David",
+        image: "dp.png",
       },
       {
         name: "mohamed apsar",
         role: "Graphic Design",
-        image: "https://via.placeholder.com/150/4169e1/fff?text=David",
+        image: "dp.png",
       },
       {
         name: "Abhishek",
         role: "Graphic Design",
-        image: "https://via.placeholder.com/150/4169e1/fff?text=David",
+        image: "dp.png",
       },
     ],
     "Office Bearers": [
       {
         name: "M.Naveen",
         role: "President",
-        image: "https://via.placeholder.com/150/32cd32/fff?text=Mike",
+        image: "dp.png",
       },
       {
         name: "S.Muthaiah",
         role: "Vice President",
-        image: "https://via.placeholder.com/150/3cb371/fff?text=Sara",
+        image: "dp.png",
       },
       {
         name: "P.R.Ramesh Bala",
         role: "Secretary",
-        image: "https://via.placeholder.com/150/3cb371/fff?text=Sara",
+        image: "dp.png",
       },
       {
         name: "G.Dharani",
         role: "Vice Secretary",
-        image: "https://via.placeholder.com/150/3cb371/fff?text=Sara",
+        image: "dp.png",
       },
       {
         name: "A.Kishore Kumar",
         role: "Treasurer",
-        image: "https://via.placeholder.com/150/3cb371/fff?text=Sara",
+        image: "dp.png",
       },
     ],
   };

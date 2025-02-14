@@ -7,22 +7,23 @@ const ContactUs = () => {
         Contact Us
       </h2>
 <h1>Faculty Coordinators</h1>
-<div className="fac">
-<div className="contact-card mt-3">
-          <h3 className="my-4 neon-text default-cursor">D.B.Lailitha M.E.,PH.D</h3>
-          <p className="contact-info">Phone: 9894785471</p>
+        <div className="d-flex flex-wrap justify-content-center gap-4 contact-list w-100">
+        <div className="contact-card">
+          <h3 className="my-4 neon-text default-cursor">Dr.Lalitha M.E.,PH.D</h3>
+          <p className="contact-info">Phone: +91 93426 29920</p>
         </div>
-        <div className="contact-card mt-3">
-          <h3 className="my-4 neon-text default-cursor">Mrs.P.PabithaMuthu M.E.,Ph.D</h3>
+        
+        <div className="contact-card">
+          <h3 className="my-4 neon-text default-cursor">Mrs.P.Pabitha Muthu M.E.,Ph.D</h3>
           <p className="contact-info">Phone: 8220290078</p>
         </div>
-        <div className="contact-card mt-3">
+        <div className="contact-card">
           <h3 className="my-4 neon-text default-cursor">Mrs.K.Krishnaveni M.E.,Ph.D</h3>
-          <p className="contact-info">Phone: 8220290078</p>
+          <p className="contact-info">Phone: 9876543210</p>
         </div>
         </div>
 
-<h1>Student Coorfinators</h1>
+<h1>Student Coordinators</h1>
       <div className="d-flex flex-wrap justify-content-center gap-4 contact-list w-100">
         <div className="contact-card">
           <h3 className="my-4 neon-text default-cursor">Naveen</h3>
@@ -31,15 +32,15 @@ const ContactUs = () => {
         
         <div className="contact-card">
           <h3 className="my-4 neon-text default-cursor">S.Muthaiah</h3>
-          <p className="contact-info">Phone: 9876543210</p>
+          <p className="contact-info">Phone: +91 7094243255</p>
         </div>
         <div className="contact-card">
           <h3 className="my-4 neon-text default-cursor">P.R.Ramesh Bala</h3>
-          <p className="contact-info">Phone: 9876543210</p>
+          <p className="contact-info">Phone: 9360381404</p>
         </div>
         <div className="contact-card">
           <h3 className="my-4 neon-text default-cursor">Kishore Kumar</h3>
-          <p className="contact-info">Phone: 9876543210</p>
+          <p className="contact-info">Phone: 8248511613</p>
         </div>
         <div className="contact-card">
           <h3 className="my-4 neon-text default-cursor">Chandhru</h3>

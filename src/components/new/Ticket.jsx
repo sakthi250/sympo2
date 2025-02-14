@@ -5,7 +5,7 @@ const Ticket = () => {
   return (
       
         <div className="ticket col-4 vis">
-            <a  href="https://forms.gle/N9L5Y6vx3wbASVQC6">
+            <a  href="https://forms.gle/VSGMukPKj6oRudyP8">
           <div className="ticket-border">
             <div className="ticket-content">
               <h2 className="ticket-title">Retro Movie Ticket</h2>

@@ -151,7 +151,7 @@ const Events = () => {
           <Modal.Footer className="text-white card-color d-flex justify-content-center">
             <p>{selectedEvent?.description}</p>
             <button className="btn btn-light reg-btn">
-              <a href="https://forms.gle/N9L5Y6vx3wbASVQC6" className="an rounded" >Register</a>
+              <a href="https://forms.gle/VSGMukPKj6oRudyP8" className="an rounded" >Register</a>
             </button>
           </Modal.Footer>
         </Modal>

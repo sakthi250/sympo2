@@ -67,7 +67,7 @@ const Header = () => {
           </li>
           <li className="nav-link">
             <a
-              href="https://forms.gle/N9L5Y6vx3wbASVQC6"
+              href="https://forms.gle/VSGMukPKj6oRudyP8"
               className="nav-link m-0 p-0"
             >
               Register Now
