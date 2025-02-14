@@ -4,8 +4,10 @@ import Pop from "./Pop";
 import "./index.css";
 import Cse from "./Cse";
 import Ticket from "./Ticket";
+import { useNavigate } from "react-router-dom";
 
 const New = () => {
+  const navigate = useNavigate();
   const calculateTimeLeft = () => {
     const eventDate = new Date("2025-02-26T00:00:00").getTime();
     const now = new Date().getTime();
@@ -49,6 +51,7 @@ const New = () => {
       location: "Auditorium",
     },
   ];
+ 
 
   return (
     <div className="new-home-con">
@@ -119,7 +122,9 @@ const New = () => {
         <div className="busSection">
           <div className="busImageContainer">
             <img src="/bus.avif" alt="Bus Route" className="busImage m-1" />
-            <button className="btn btn-warning text-light">View Routes</button>
+            <button className="btn btn-warning text-light"  onClick={() => {
+            navigate("/bus");
+          }}  >View Routes</button>
           </div>
 
           <div className="busText">

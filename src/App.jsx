@@ -7,7 +7,7 @@ import New from "./components/new/New";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Loading from "./components/loading/Loading";
 import { useEffect, useState } from "react";
-
+import Bus  from "./components/Bus/bus";
 const App = () => {
   const [isLoading, setLoading] = useState(true);
   useEffect(() => {
@@ -25,6 +25,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/" element={<New />} />
+          <Route path="/bus" element={<Bus />} />
         </Routes>
       </Router>
       {/* <Home /> */}
