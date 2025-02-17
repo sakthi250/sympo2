@@ -47,7 +47,28 @@
 .default-cursor {
     cursor: default;
 }
-
+.rules-btn {
+    background-color: gold !important;
+    color: black !important;
+    font-weight: bold;
+    border: 2px solid black;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .rules-btn:hover {
+    background-color: #ffd700;
+    color: black;
+    border-color: white;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between buttons */
+    margin: 40px 0; /* Adds space above and below */
+  }
+  
+  
+    
 /* 📌 Responsive Design */
 
 /* Small Devices (Phones) */

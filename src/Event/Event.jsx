@@ -9,70 +9,96 @@ const eventsData = {
       name: "CodeQuest",
       src: "coding.jpg",
       description: "This coding contest is designed to test participants' programming knowledge, problem-solving abilities, and debugging skills through a series of challenging rounds. Teams of two contestants will compete, progressing through three rounds of increasing difficulty.",
+      rulesPdf: "code.docx",
+      link:"https://docs.google.com/document/d/1whbM0eHorWd03twwzyZVLw7wqDE3LOmq/view"
     },
     {
-      name: "Tech Tackle",
+      name: "QuizTime Classics",
       src: "quiz.jpg",
-      description: "Name the legends, Guess the greats, solve tricky puzzles, and ace the tech quiz! Show off your reasoning and technical brilliance!  Three rounds. One champion. Will you rise to the top?”",
+      description: "Name the legends, Guess the greats, solve tricky puzzles, and ace the tech quiz! Show off your reasoning and technical brilliance! Three rounds. One champion. Will you rise to the top?",
+      rulesPdf: "Tech_tackle.docx",
+      link:"https://docs.google.com/document/d/1MPhuZzpjjhFlTfKR1F3NmstFsS1JrEBR"
     },
     {
       name: "Paper Reel",
       src: "paper.webp",
       description: "Showcase your research and presentation skills.",
+      rulesPdf: "",
     },
     {
       name: "RetroPoster Jam",
       src: "poster.jpg",
       description: "Design vintage-style posters with a tech touch.",
+      rulesPdf: "design.docx",
+      link:"https://docs.google.com/document/d/17MTPjl3SHVDm6uQtaGw98hOzSn2rf2IY/view"
     },
     {
       name: "Cut and Frame",
       src: "video.jpg",
-      description: "In Cut And Frame (Video Editing) there are mainly two rounds in this event.  1st Round Each individual will be assigned a specific theme. The video should have a duration of 2-3 minutes and must be exported . The allotted time for video editing is 30 minutes.  2nd Round  A common theme will be provided to all participants selected from the first round. The video should be 4-5 minutes in duration and must be exported . The allocated time for editing the video is 20 minutes",
+      description: "Edit videos under a time constraint with creative themes.",
+      rulesPdf: "editing.pdf",
+      link:"https://drive.google.com/file/d/1n4oEu_PCwnqu3OneAtHTagBcoDThKg3p/view"
     },
     {
       name: "Screen Test",
       src: "mock.webp",
       description: "Test your screenwriting and storytelling skills.",
+      rulesPdf: "",
     },
   ],
   "Non-Technical": [
     {
-      name: "RetroRoom",
+      name: "Retro Room",
       src: "room.webp",
       description: "Step into a retro-themed escape room.",
+      rulesPdf: "",
     },
     {
-      name: "MindLink",
+      name: "Games Bond",
       src: "mindlink.jpg",
       description: "A mind-bending puzzle challenge.",
+      rulesPdf: "gamesbond.docx",
+      link:"https://docs.google.com/document/d/1agPkQP8vPCUJ9w_6FNW9FyP-q0Cq14eQ/view"
     },
     {
       name: "Bidding War",
       src: "bididng.jpg",
       description: "An auction-based strategy game.",
+      rulesPdf: "ipl.pdf",
+      link:"https://drive.google.com/file/d/1BCt36Mp-B-gjQU5223yNvVISXnots-Tb/view"
     },
     {
       name: "Ultimate Hustle",
       src: "multi.avif",
       description: "A game of negotiation and persuasion.",
+      rulesPdf: "multitasking.docx",
+      link:"https://docs.google.com/document/d/1FZ56DFLVgAflwzc25YjOXMfBiBv7c_fS/view"
     },
     {
-      name: "Culinary Alchemy",
+      name: "Cine Bites",
       src: "flame.avif",
       description: "A fusion of cooking and chemistry.",
+      rulesPdf: "cook.docx",
+      link:"https://docs.google.com/document/d/13ms8UQszr_71yqkJfwjGu8nIDhnPdoF3/view"
     },
     {
-      name: "CineSprint",
+      name: "Flash Cinema",
       src: "wall.jpg",
       description: "A cinematic treasure hunt.",
+      rulesPdf: "cinema.pdf",
+      link:"https://drive.google.com/file/d/1XttqI785LO9g4_R2Ld3OqUt3EIOZtdQ0/view"
     },
   ],
 };
-
 const Events = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [filter, setFilter] = useState("All");
+
+  const handleRulesClick = (link) => {
+    if (link) {
+      window.open(link, "_blank");
+    }
+  };
 
   return (
     <div className="container-fluid py-5 bg-dark text-white min-vh-100">
@@ -130,6 +156,15 @@ const Events = () => {
                     />
                     <div className="card-body">
                       <h5 className="card-title">{event.name}</h5>
+                      <button
+                        className="btn rules-btn"
+                        onClick={(e) => {
+                          e.stopPropagation(); 
+                          handleRulesClick(event.link);
+                        }}
+                      >
+                        Rules
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -148,11 +183,24 @@ const Events = () => {
           <Modal.Header closeButton className="text-white card-color">
             <Modal.Title>{selectedEvent?.name}</Modal.Title>
           </Modal.Header>
-          <Modal.Footer className="text-white card-color d-flex justify-content-center">
+          <Modal.Footer className="text-white card-color d-flex flex-column align-items-center">
             <p>{selectedEvent?.description}</p>
-            <button className="btn btn-light reg-btn">
-              <a href="https://forms.gle/VSGMukPKj6oRudyP8" className="an rounded" >Register</a>
-            </button>
+            <div className="d-flex gap-3">
+              <button className="btn btn-light reg-btn">
+                <a
+                  href="https://forms.gle/VSGMukPKj6oRudyP8"
+                  className="an rounded"
+                >
+                  Register
+                </a>
+              </button>
+              <button
+                className="btn rules-btn"
+                onClick={() => handleRulesClick(selectedEvent.rulesPdf)}
+              >
+                Rules
+              </button>
+            </div>
           </Modal.Footer>
         </Modal>
       )}

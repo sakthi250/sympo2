@@ -1,5 +1,5 @@
 .img{
-    height: 100vh;
-    width: 100vw;
+    height:auto;
+    width: 100%;
     background-size: cover;
 }

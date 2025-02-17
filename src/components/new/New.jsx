@@ -78,7 +78,7 @@ const New = () => {
               {timeLeft.seconds} <div>Seconds</div>
             </div>
           </div>
-          <h4 className="neon-text m-1">26 February 2025</h4>
+          <h4 className="date-highlight">26 February 2025</h4>
         </div>
 
         <div className="new-img-con">
@@ -89,6 +89,19 @@ const New = () => {
           </h3>
           <Pop />
         </div>
+        <div className="button-container">
+  <button className="glass-btn left-eye" onClick={() => navigate("/events")}>
+    Events
+  </button>
+  <button
+    className="glass-btn right-eye"
+    onClick={() => window.open("https://forms.gle/VSGMukPKj6oRudyP8", "_blank")}
+  >
+   Register
+  </button>
+</div>
+
+
         <div className="">
           <h2 className="oursponsor">Our Sponsor</h2>
           <img src="sponsor.jpg" className="sponsor-img"></img>
@@ -108,6 +121,17 @@ const New = () => {
           </div>
           <Ticket/>
         </div>
+        <div className="button-container">
+  <button className="glass-btn left-eye" onClick={() => navigate("/events")}>
+    Events
+  </button>
+  <button
+    className="glass-btn right-eye"
+    onClick={() => window.open("https://forms.gle/VSGMukPKj6oRudyP8", "_blank")}
+  >
+   Register
+  </button>
+</div>
         <div className="mapSection">
           <h2 className="mapTitle">Find Us Here</h2>
           <div className="mapContainer">

@@ -1,8 +1,9 @@
-
-import "./index.css"
+import "./index.css";
 const Bus = () => {
-    return (
-        <img src="bus.png.jpg" className="img"  />
-    )
-}
-export default Bus
+  return (
+    <div className="new-con new-home-con">
+      <img src="bus.png.jpg" className="img" />
+    </div>
+  );
+};
+export default Bus;

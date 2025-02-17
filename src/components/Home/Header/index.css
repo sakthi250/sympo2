@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +7,11 @@
 }
 
 .nav-header {
-  background: #333;
-  color: white;
+  background: linear-gradient(to right, #000, #2c2c2c);
+  color: #ffd700;
   padding: 15px 20px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Glow effect */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Golden glow effect */
+  font-family: 'IM Fell English SC', serif;
 }
 
 .nav-content {
@@ -21,7 +24,12 @@
 .website-logo {
   height: 50px;
   cursor: pointer;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5)); /* Logo glow effect */
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8)); /* Logo glow effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+.website-logo:hover {
+  transform: scale(1.1) rotate(3deg); /* Slight magical movement */
 }
 
 /* Navigation Menu */
@@ -34,13 +42,22 @@
   margin: 0 15px;
   cursor: pointer;
   font-size: 18px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Text glow */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Golden glow */
   transition: color 0.3s, text-shadow 0.3s;
+  position: relative;
+}
+
+/* Magical Flicker Effect */
+@keyframes flicker {
+  0% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
+  50% { text-shadow: 0 0 15px rgba(255, 215, 0, 1); }
+  100% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
 }
 
 .nav-link:hover {
   color: #f4a261;
-  text-shadow: 0 0 15px #f4a261; /* Glowing text on hover */
+  text-shadow: 0 0 15px #f4a261; /* Strong glow */
+  animation: flicker 1s infinite alternate; /* Flickering effect */
 }
 
 /* Hamburger Menu */
@@ -48,13 +65,13 @@
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: rgb(39, 188, 193);
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Glow effect */
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.8); /* Glow effect */
   transition: text-shadow 0.3s ease-in-out;
 }
 
 .menu-toggle:hover {
-  text-shadow: 0 0 15px rgba(255, 255, 255, 1); /* Stronger glow on hover */
+  text-shadow: 0 0 15px rgba(255, 215, 0, 1); /* Stronger glow */
 }
 
 /* Responsive Navbar */
@@ -73,11 +90,16 @@
     left: 0;
     width: 100%;
     text-align: center;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Glow effect for mobile menu */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Glow effect for mobile menu */
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
   }
 
   .nav-menu.active {
     display: flex;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .nav-link {
