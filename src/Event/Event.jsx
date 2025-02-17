@@ -17,7 +17,7 @@ const eventsData = {
       src: "quiz.jpg",
       description: "Name the legends, Guess the greats, solve tricky puzzles, and ace the tech quiz! Show off your reasoning and technical brilliance! Three rounds. One champion. Will you rise to the top?",
       rulesPdf: "Tech_tackle.docx",
-      link:"https://docs.google.com/document/d/1MPhuZzpjjhFlTfKR1F3NmstFsS1JrEBR"
+      link:"https://docs.google.com/document/d/1MPhuZzpjjhFlTfKR1F3NmstFsS1JrEBR/view"
     },
     {
       name: "Paper Reel",
@@ -196,7 +196,7 @@ const Events = () => {
               </button>
               <button
                 className="btn rules-btn"
-                onClick={() => handleRulesClick(selectedEvent.rulesPdf)}
+                onClick={() => handleRulesClick(selectedEvent.link)}
               >
                 Rules
               </button>
