@@ -149,7 +149,7 @@ flex: 1;
 color: white;
 text-align: left;
 }
-
+/* button-container */
 .busText h2 {
 font-size: 24px;
 margin-bottom: 10px;
@@ -245,6 +245,9 @@ margin-top: 25px;
     0 0 10px #ff9900, 
     0 0 18px rgba(255, 102, 0, 0.6);
 }
+}
+.button-container{
+  margin-top: 10px;
 }
 .glass-btn {
 padding: 15px 30px;

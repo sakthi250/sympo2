@@ -3,3 +3,8 @@
     width: 100%;
     background-size: cover;
 }
+@media (max-width: 480px) {
+    .new-con{
+        height: 100vh;
+    }
+}

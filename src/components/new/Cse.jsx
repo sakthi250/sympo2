@@ -34,7 +34,8 @@ const Cse = () => {
         whiteSpace: "pre-line", // Important for line breaks
         overflow: "hidden",
         maxWidth: "90%", // Limits width for responsiveness
-        margin: "auto", // Centers the text
+        margin: "auto",
+        padding:"10px" // Centers the text
       }}
       dangerouslySetInnerHTML={{ __html: displayText.replace(/\n/g, "<br/>") }} // Converts \n to actual line breaks
     />

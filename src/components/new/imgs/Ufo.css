@@ -1,0 +1,72 @@
+.ufo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* background-color: #111; Dark background to make the UFO pop */
+  }
+  
+  .ufo-svg {
+    width: 220px;
+    height: auto;
+    animation: bounce 2s infinite ease-in-out, neon-glow 2s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(50px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+  }
+  
+  @keyframes neon-glow {
+    0% {
+      filter: drop-shadow(0 0 5px #00b2a6);
+    }
+    100% {
+      filter: drop-shadow(0 0 15px #00b2a6);
+    }
+  }
+  
+  .ufo-svg:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Additional styles for UFO elements */
+  .ufo-svg .ufo-body {
+    fill: #444;
+    stroke: #222;
+    stroke-width: 5;
+  }
+  
+  .ufo-svg .ufo-dome {
+    fill: #666;
+    stroke: #333;
+    stroke-width: 5;
+  }
+  
+  .ufo-svg .ufo-lights {
+    fill: #00b2a6;
+  }
+  
+  .ufo-svg .ufo-windows {
+    fill: #fff;
+  }
+  
+  .ufo-svg .ufo-antenna {
+    stroke: #222;
+    stroke-width: 4;
+  }
+  
+  .ufo-svg .ufo-beam {
+    stroke: #00b2a6;
+    stroke-width: 6;
+    fill: none;
+  }
+  

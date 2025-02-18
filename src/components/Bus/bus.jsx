@@ -1,7 +1,7 @@
 import "./index.css";
 const Bus = () => {
   return (
-    <div className="new-con new-home-con">
+    <div className="new-home-con new-con">
       <img src="bus.png.jpg" className="img" />
     </div>
   );
