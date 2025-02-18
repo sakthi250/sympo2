@@ -8,7 +8,7 @@ const Ticket = () => {
             <a  href="https://forms.gle/VSGMukPKj6oRudyP8">
           <div className="ticket-border">
             <div className="ticket-content">
-              <h2 className="ticket-title">Retro Movie Ticket</h2>
+              <h2 className="ticket-title">Passes to Simulations</h2>
               <p className="ticket-text">REGISTER NOW</p>
               <p className="ticket-date">Admit One | 2025</p>
             </div>

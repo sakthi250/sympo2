@@ -5,6 +5,8 @@ import "./index.css";
 import Cse from "./Cse";
 import Ticket from "./Ticket";
 import { useNavigate } from "react-router-dom";
+import Ball from "./imgs/Ball";
+import Ufo from "./imgs/Ufo";
 
 const New = () => {
   const navigate = useNavigate();
@@ -51,15 +53,15 @@ const New = () => {
       location: "Auditorium",
     },
   ];
- 
+
 
   return (
     <div className="new-home-con">
       <div className="new-home-con text-center">
         <img src="logo.svg" className="new-img" alt="Department Logo" />
-        <Cse/>
+        <Cse />
         <h3 className="new-glowing-text m-2">
-          Where Innovation Meets Silver Screen <br />
+          Where Innovation Escapes The MATRIX <br />
         </h3>
 
         <div className="countdownSection">
@@ -82,34 +84,43 @@ const New = () => {
         </div>
 
         <div className="new-img-con">
-          <Cam />
-          <h3 className="neon-text m-2">
-            Join us for a spectacular journey into technology, creativity, and
-            innovation, all wrapped in the charm of Retro Cinema.
+          <Ufo />
+          <h3 className="neon-text m-2">{"Join us for a spectacular journey into technology, creativity, and innovation, all wrapped in the charm of Non-Linear Dimensions."}
           </h3>
-          <Pop />
+          <Ball />
         </div>
         <div className="button-container">
-  <button className="glass-btn left-eye" onClick={() => navigate("/events")}>
-    Events
-  </button>
-  <button
-    className="glass-btn right-eye"
-    onClick={() => window.open("https://forms.gle/VSGMukPKj6oRudyP8", "_blank")}
-  >
-   Register
-  </button>
-</div>
+          <button className="glass-btn left-eye" onClick={() => navigate("/events")}>
+            Events
+          </button>
+          <button
+            className="glass-btn right-eye"
+            onClick={() => window.open("https://forms.gle/VSGMukPKj6oRudyP8", "_blank")}
+          >
+            Register
+          </button>
+        </div>
 
 
         <div className="">
-          <h2 className="oursponsor">Our Sponsor</h2>
+          <h2 className="oursponsor">Our Sponsors</h2>
           <img src="sponsor.jpg" className="sponsor-img"></img>
         </div>
+        <iframe src="https://youtube.com/embed/XTo48IkdiqM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen className="mt-5 sponsor-img"></iframe> <div className="button-container">
+          <button
+            className="glass-btn right-eye"
+            onClick={() => window.open("https://www.youtube.com/@RPC1291", "_blank")}
+          >
+            Click here
+          </button>
+        </div>
         <div className="eventSchedule row d-flex justify-content-st">
-         
+
           <h2 className="scheduleTitle">Event Schedule</h2>
-        <Ticket/>
+          <Ticket />
           <div className="eventsGrid col-4">
             {events.map((event, index) => (
               <div key={index} className="eventCard">
@@ -119,19 +130,19 @@ const New = () => {
               </div>
             ))}
           </div>
-          <Ticket/>
+          <Ticket />
         </div>
         <div className="button-container">
-  <button className="glass-btn left-eye" onClick={() => navigate("/events")}>
-    Events
-  </button>
-  <button
-    className="glass-btn right-eye"
-    onClick={() => window.open("https://forms.gle/VSGMukPKj6oRudyP8", "_blank")}
-  >
-   Register
-  </button>
-</div>
+          <button className="glass-btn left-eye" onClick={() => navigate("/events")}>
+            Events
+          </button>
+          <button
+            className="glass-btn right-eye"
+            onClick={() => window.open("https://forms.gle/VSGMukPKj6oRudyP8", "_blank")}
+          >
+            Register
+          </button>
+        </div>
         <div className="mapSection">
           <h2 className="mapTitle">Find Us Here</h2>
           <div className="mapContainer">
@@ -144,15 +155,16 @@ const New = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+
           </div>
         </div>
 
         <div className="busSection">
           <div className="busImageContainer">
             <img src="/bus.avif" alt="Bus Route" className="busImage m-1" />
-            <button className="btn btn-warning text-light"  onClick={() => {
-            navigate("/bus");
-          }}  >View Routes</button>
+            <button className="btn btn-warning text-light" onClick={() => {
+              navigate("/bus");
+            }}  >View Routes</button>
           </div>
 
           <div className="busText">
