@@ -3,8 +3,21 @@
     width: 100%;
     background-size: cover;
 }
+.bus-con{
+    background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background: linear-gradient(135deg,  #df3805 20%, #1a1a1a 50%, #00b2a6 80%);
+    height:auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
 @media (max-width: 480px) {
-    .new-con{
+    .bus-con{
         height: 100vh;
     }
 }

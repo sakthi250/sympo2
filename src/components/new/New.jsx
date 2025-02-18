@@ -102,14 +102,14 @@ const New = () => {
         </div>
 
 
-        <div className="">
+        <div>
           <h2 className="oursponsor">Our Sponsors</h2>
-          <img src="sponsor.jpg" className="sponsor-img"></img>
+          <img src="sponsor.jpg" className="sponsor-img"/>
         </div>
         <iframe src="https://youtube.com/embed/XTo48IkdiqM"
-          frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen className="mt-5 sponsor-img"></iframe> <div className="button-container">
+          allowFullScreen className="mt-5 sponsor-img" />
+        <div className="button-container">
           <button
             className="glass-btn right-eye"
             onClick={() => window.open("https://www.youtube.com/@RPC1291", "_blank")}
