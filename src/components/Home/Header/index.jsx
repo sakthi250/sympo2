@@ -34,6 +34,7 @@ const Header = () => {
             onClick={() => {
               toggleMenu();
               navigate("/");
+              window.scrollTo(0, 0); 
             }}
           >
             Home
@@ -43,6 +44,7 @@ const Header = () => {
             onClick={() => {
               toggleMenu();
               navigate("/events");
+              window.scrollTo(0, 0); 
             }}
           >
             Events
@@ -52,6 +54,7 @@ const Header = () => {
             onClick={() => {
               toggleMenu();
               navigate("/contact");
+              window.scrollTo(0, 0); 
             }}
           >
             Contact Us
@@ -61,6 +64,7 @@ const Header = () => {
             onClick={() => {
               toggleMenu();
               navigate("/about");
+              window.scrollTo(0, 0); 
             }}
           >
             About Us

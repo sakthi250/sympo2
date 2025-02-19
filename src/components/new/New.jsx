@@ -106,9 +106,11 @@ const New = () => {
           <h2 className="oursponsor">Our Sponsors</h2>
           <img src="sponsor.jpg" className="sponsor-img"/>
         </div>
+       <h4 className="youtube pt-3">RAINPEARL PASSION CORNER</h4>
         <iframe src="https://youtube.com/embed/XTo48IkdiqM"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen className="mt-5 sponsor-img" />
+          allowFullScreen className="mt-2 sponsor-vid" />
+          
         <div className="button-container">
           <button
             className="glass-btn right-eye"

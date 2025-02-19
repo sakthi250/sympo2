@@ -73,7 +73,7 @@ const About = () => {
         image: "dp.png",
       },
       {
-        name: "P.R.Ramesh Bala",
+        name: "S.Thiyagu",
         role: "Secretary",
         image: "dp.png",
       },
@@ -85,6 +85,11 @@ const About = () => {
       {
         name: "A.Kishore Kumar",
         role: "Treasurer",
+        image: "dp.png",
+      },
+      {
+        name: "M.Vishwa",
+        role: "Co-Treasurer",
         image: "dp.png",
       },
     ],

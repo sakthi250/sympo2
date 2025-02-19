@@ -171,15 +171,27 @@ text-shadow: 2px 2px 8px rgba(255, 165, 0, 0.8);
 margin-bottom: 20px;
 }
 .oursponsor {
-font-size: 24px;
+font-size: 30px;
 font-weight: bold;
 color: #ffcc00;
 text-shadow: 2px 2px 8px rgba(255, 165, 0, 0.8);
 margin-bottom: 20px;
 }
+.youtube {
+font-size: 18px;
+font-weight: bold;
+color: #fcf9ed;
+text-shadow: 2px 2px 8px rgba(255, 165, 0, 0.8);
+margin-top: 10px;
+margin-bottom: 6px;
+}
 .sponsor-img {
 width: 400px; 
 height: auto; 
+}
+.sponsor-vid {
+width: 400px; 
+height: 250px; 
 }
 
 .eventsGrid {
@@ -390,6 +402,10 @@ border-radius: 15px;
 
 
 @media (max-width: 480px) {
+  .sponsor-vid {
+    width: 200px; 
+    height: 125px; 
+    }
   .new-img {
       width: 80%;
   }
