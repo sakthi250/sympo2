@@ -12,14 +12,15 @@
   background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
   background-blend-mode: overlay;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  min-height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
   height: auto;
+  transform: scale(1);
 }
 
 .new-glowing-text {

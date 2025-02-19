@@ -6,7 +6,15 @@ const ContactUs = () => {
       <h2 className="text-center mb-4 display-4 neon-text default-cursor mt-4">
         Contact Us
       </h2>
-<h1 className="my-lg-5">Faculty Coordinators</h1>
+      <h1 className="my-lg-5">Convenors</h1> 
+      <div className="contact-card">
+          <h3 className="my-4 neon-text default-cursor">Dr.S.Siva Ranjani DEAN(CS&IT)&IQAC</h3>
+        </div>
+        <div className="contact-card">
+          <h3 className="my-4 neon-text default-cursor">Dr.M.Parvathy HOD-CSE</h3>
+        </div>
+    <h1 className="my-4 my-lg-5">Faculty Coordinators</h1>
+
         <div className="d-flex flex-wrap justify-content-center gap-4 contact-list w-100">
         <div className="contact-card">
           <h3 className="my-4 neon-text default-cursor">Dr.Lalitha M.E.,PH.D</h3>

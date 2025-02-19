@@ -6,9 +6,10 @@ import { useNavigate } from "react-router-dom";
 import Ball from "./imgs/Ball";
 import Ufo from "./imgs/Ufo";
 import EventCard from "./EventCard/EventCard";
-
 const New = () => {
+  
   const navigate = useNavigate();
+ 
   const calculateTimeLeft = () => {
     const eventDate = new Date("2025-02-26T00:00:00").getTime();
     const now = new Date().getTime();
@@ -153,6 +154,7 @@ const New = () => {
           </div>
           <Ticket />
         </div>
+        
         <div className="button-container">
           <button className="glass-btn left-eye" onClick={() => navigate("/events")}>
             Events
