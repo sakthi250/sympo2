@@ -66,7 +66,7 @@ const eventsData = {
     {
       name: "Bidding War",
       src: "bididng.jpg",
-      description: "An auction-based strategy game.   Note: Must install Kahoot app",
+      description: "An auction-based strategy game(IPL auction) Note: Must install Kahoot app.",
       rulesPdf: "ipl.pdf",
       link:"https://drive.google.com/file/d/1aDPD1dPtBCiommB9XBMqVBfDdnW2RknJ/view"
     },
