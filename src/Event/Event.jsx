@@ -24,6 +24,7 @@ const eventsData = {
       src: "paper.webp",
       description: "Showcase your research and presentation skills.",
       rulesPdf: "",
+      link:"https://docs.google.com/document/d/1DCc5ZLr8zN484BoNGpcaXybn3BDPeD1k/view"
     },
     {
       name: "RetroPoster Jam",
@@ -44,6 +45,7 @@ const eventsData = {
       src: "mock.webp",
       description: "Test your screenwriting and storytelling skills.",
       rulesPdf: "",
+      link:"https://docs.google.com/document/d/1c4cV3_woLadkLG-SPPP8F9z1oeothVEv/view"
     },
   ],
   "Non-Technical": [
@@ -52,6 +54,7 @@ const eventsData = {
       src: "room.webp",
       description: "Step into a retro-themed escape room.",
       rulesPdf: "",
+      link:"https://docs.google.com/document/d/1bum91Esa-Td4MuLRbJq5I5Z4eWto0anu/view"
     },
     {
       name: "Games Bond",
