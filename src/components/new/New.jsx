@@ -66,7 +66,7 @@ const New = () => {
       name: "Prize Distribution",
       time: "3:00 PM - 4:00 PM",
       location: "Auditorium",
-      events:["winners will be awarded with prizes 🏆🥇🏅🏆"]
+      events:["Winners will be awarded with prizes 🏆🥇"]
     },
   ];
 
