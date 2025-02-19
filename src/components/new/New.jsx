@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import Cam from "./Cam";
-import Pop from "./Pop";
 import "./index.css";
 import Cse from "./Cse";
 import Ticket from "./Ticket";
 import { useNavigate } from "react-router-dom";
 import Ball from "./imgs/Ball";
 import Ufo from "./imgs/Ufo";
+import EventCard from "./EventCard/EventCard";
 
 const New = () => {
   const navigate = useNavigate();
@@ -37,20 +36,37 @@ const New = () => {
   }, []);
   const events = [
     {
-      name: "Technical Events",
-      time: "10:00 AM - 12:00 PM",
+      name: "Slot-1",
+      time: "9:30 AM - 11:00 AM",
       location: "CSE Dept",
+      events: ["Tech Tackle (Quiz)"
+        , "Code Quest (Coding)"
+        , "Cine Bites (Flameless Cooking)"
+        , "Cut  & Frame (Video Editing)"]
     },
-    { name: "Lunch", time: "12:00 PM - 1:00 PM", location: "Canteen" },
     {
-      name: "Non-Technical Events",
-      time: "1:00 PM - 3:00 PM",
+      name: "Slot-2",
+      time: "11:20 AM - 12:50 PM",
       location: "CSE Dept",
+      events: ["Paper Reel (Paper Presentation)",
+        , "Poster Design (Retro Poster Jam)"
+        , "Bidding War (IPL Auction)", "Retro Room"]
+    },
+    { name: "Lunch", time: "12:50 PM - 1:30 PM", location: "Canteen", events: ["Enjoy your meals 🍽️"] },
+    {
+      name: "Slot-3",
+      time: "1:30 PM - 3:00 PM",
+      location: "CSE Dept",
+      events: ["Games Bond (Connexion)",
+        "Flash Cinema (Short Film)",
+        "Ultimate Hustle (Multi Tasking)",
+        "Screen Test (Mock Interview)"]
     },
     {
       name: "Prize Distribution",
       time: "3:00 PM - 4:00 PM",
       location: "Auditorium",
+      events:["winners will be awarded with prizes 🏆🥇🏅🏆"]
     },
   ];
 
@@ -104,13 +120,13 @@ const New = () => {
 
         <div>
           <h2 className="oursponsor">Our Sponsors</h2>
-          <img src="sponsor.jpg" className="sponsor-img"/>
+          <img src="sponsor.jpg" className="sponsor-img" />
         </div>
-       <h4 className="youtube pt-3">RAINPEARL PASSION CORNER</h4>
+        <h4 className="youtube pt-3">RAINPEARL PASSION CORNER</h4>
         <iframe src="https://youtube.com/embed/XTo48IkdiqM"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope"
           allowFullScreen className="mt-2 sponsor-vid" />
-          
+
         <div className="button-container">
           <button
             className="glass-btn right-eye"
@@ -119,17 +135,20 @@ const New = () => {
             Click here
           </button>
         </div>
-        <div className="eventSchedule row d-flex justify-content-st">
+        <div className="eventSchedule row d-flex justify-content-start">
 
-          <h2 className="scheduleTitle">Event Schedule</h2>
+          <h2 className="scheduleTitle ms-lg-3">Event Schedule</h2>
           <Ticket />
           <div className="eventsGrid col-4">
             {events.map((event, index) => (
-              <div key={index} className="eventCard">
-                <h3 className="eventName">{event.name}</h3>
-                <p className="eventTime">🕒 {event.time}</p>
-                <p className="eventLocation">📍 {event.location}</p>
+              // <div key={index} className="eventCard flip">
+              //   <h3 className="eventName">{event.name}</h3>
+              //   <p className="eventTime">🕒 {event.time}</p>
+              //   <p className="eventLocation">📍 {event.location}</p>
+              <div key={index}>
+                <EventCard eventName={event.name} eventTime={event.time} eventLocation={event.location} events={event.events}></EventCard>
               </div>
+              // </div>
             ))}
           </div>
           <Ticket />
