@@ -66,9 +66,9 @@ const eventsData = {
     {
       name: "Bidding War",
       src: "bididng.jpg",
-      description: "An auction-based strategy game.",
+      description: "An auction-based strategy game.   Note: Must install Kahoot app",
       rulesPdf: "ipl.pdf",
-      link:"https://drive.google.com/file/d/1BCt36Mp-B-gjQU5223yNvVISXnots-Tb/view"
+      link:"https://drive.google.com/file/d/1aDPD1dPtBCiommB9XBMqVBfDdnW2RknJ/view"
     },
     {
       name: "Ultimate Hustle",
