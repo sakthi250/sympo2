@@ -41,9 +41,14 @@ const About = () => {
         image: "dp.png",
       },
     ],
-    "Graphic Design Team": [
+    "Graphic Designing Team": [
       {
         name: "Harini Shree A",
+        role: "Graphic Design",
+        image: "dp.png",
+      },
+      {
+        name: "Ramesh Bala",
         role: "Graphic Design",
         image: "dp.png",
       },
@@ -116,6 +121,36 @@ const About = () => {
       },
       {
         name: "Praveenraj D",
+        role: "Multimedia",
+        image: "dp.png",
+      },
+      {
+        name: "Lal Roshan S",
+        role: "Multimedia",
+        image: "dp.png",
+      },
+      {
+        name: "Mohammed Abeeh H",
+        role: "Multimedia",
+        image: "dp.png",
+      },
+      {
+        name: "Dhana Sakthivel K",
+        role: "Multimedia",
+        image: "dp.png",
+      },
+      {
+        name: "Asfak Ahamed A",
+        role: "Multimedia",
+        image: "dp.png",
+      },
+      {
+        name: "Muthaiah S",
+        role: "Multimedia",
+        image: "dp.png",
+      },
+      {
+        name: "Padmanaban V",
         role: "Multimedia",
         image: "dp.png",
       },
