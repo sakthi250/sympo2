@@ -11,32 +11,32 @@ const About = () => {
       //   image: "https://via.placeholder.com/150/ff7f50/fff?text=John",
       // },
       {
-        name: "Dhana Sakthivel",
+        name: "Dhana Sakthivel K",
         role: "Web Developer",
         image:"dp.png",
       },
       {
-        name: "Asfak Ahamed",
+        name: "Asfak Ahamed A",
         role: "Web Developer",
         image: "dp.png",
       },
       {
-        name: "Mukundan",
+        name: "Mukundan D",
         role: "Web Developer",
         image: "dp.png",
       },
       {
-        name: "Mohamed Shajid",
+        name: "Mohamed Shajid S",
         role: "Web Developer",
         image: "dp.png",
       },
       {
-        name: "Mohammed Sulthan",
+        name: "Mohammed Sulthan K",
         role: "Web Developer",
         image: "dp.png",
       },
       {
-        name: "Joshva Patrick",
+        name: "Joshva Patrick T",
         role: "Web Developer",
         image: "dp.png",
       },
